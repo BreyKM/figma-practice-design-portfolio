@@ -9,6 +9,7 @@
 
   --clr--accent: #FF6464;
   --clr--accent-secondary: #00A8CC;
+  --clr--accent-tertiary: #EDF7FA;
 
   --ff-primary: 'Heebo', sans-serif;
   --ff-body: var(--ff-primary);
@@ -143,6 +144,14 @@ picture {
   background-color: var(--clr--accent);
 }
 
+.bg-accent-tertiary {
+  background-color: var(--clr--accent-tertiary);
+}
+
+.bg-white {
+  background-color: var(--clr--white);
+}
+
 .fw-regular {
   font-weight: var(--fw-regular);
 }
@@ -174,6 +183,8 @@ picture {
 .fs-800 {font-size: var(--fs-800)}
 .fs-850 {font-size: var(--fs-850)}
 .fs-900 {font-size: var(--fs-900)}
+
+/* general styling */
 
 
 

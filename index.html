@@ -4,15 +4,163 @@
 <head>
   <meta charset="UTF-8" />
   <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Vite App</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
+  <header class="primary-header">
+    <div class="container">
+      <nav class="primary-nav">
+        <ul role="list" class="nav-list">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Works</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <div class="container">
+        <div class="even-columns">
+          <div>
+            <h1 class="fs-primary-heading fw-bold text-primary">
+              Hi, I am Bredan, a computer science student
+            </h1>
+            <p class="text-primary">
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint. Velit officia consequat duis enim velit mollit.
+              Exercitation veniam consequat sunt nostrud amet.
+            </p>
+            <button class="fw-buttons bg-accent text-white button">
+              Download Resume
+            </button>
+          </div>
+          <div>
+            <img src="./figma-files/profile-pic.JPG" alt="profile picture" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container bg-accent-tertiary">
+        <div class="even-columns">
+          <div>
+            <div class="header-divider">
+              <h3 class="fs-600 text-primary fw-regular">Recent posts</h3>
+              <a href="#" class="text-accent-secondary fs-600 fw-regular">View all</a>
+            </div>
+            <div class="container-box bg-white">
+              <h2 class="fs-secondary-heading text-primary fw-bold">
+                Making a design system from scratch
+              </h2>
+              <div class="date-desc-Separator">
+                <p class="text-primary">12 Feb 2020</p>
+                <p class="text-primary">|</p>
+                <p class="text-primary">Design, Pattern</p>
+              </div>
+              <p class="text-primary">
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit officia consequat duis enim velit mollit.
+                Exercitation veniam consequat sunt nostrud amet.
+              </p>
+            </div>
+          </div>
+          <div>
+            <div class="container-box bg-white">
+              <h2 class="fs-secondary-heading text-primary fw-bold">
+                Creating pixel perfect icons in Figma
+              </h2>
+              <div class="date-desc-Separator">
+                <p class="text-primary">12 Feb 2020</p>
+                <p class="text-primary">|</p>
+                <p class="text-primary">Figma, Icon Design</p>
+              </div>
+              <p class="text-primary">
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit officia consequat duis enim velit mollit.
+                Exercitation veniam consequat sunt nostrud amet.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h3 class="text-primary fw-regular fs-600">Featured works</h3>
+      <div class="works">
+        <img src="./figma-files/Rectangle 30.png" alt="*replace-later*" class="works-img" />
+        <div class="works-rightside">
+          <h2 class="text-primary fw-bold fs-secondary-heading">
+            Designing Dashboards
+          </h2>
+          <div class="works-rightside-subtext">
+            <p class="text-white bg-primary fw-extra-bold fs-500">@2020</p>
+            <p class="text-secondary fw-regular fs-600">Dashboard</p>
+          </div>
+          <p class="text-primary fw-regular fs-400">
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+            amet sint. Velit officia consequat duis enim velit mollit.
+            Exercitation veniam consequat sunt nostrud amet.
+          </p>
+        </div>
+      </div>
+      <div class="works">
+        <img src="./figma-files/Rectangle 32.png" alt="*replace-later*" class="works-img" />
+        <div class="works-rightside">
+          <h2 class="text-primary fw-bold fs-secondary-heading">
+            Vibrant Portraits of 2020
+          </h2>
+          <div class="works-rightside-subtext">
+            <p class="text-white bg-primary fw-extra-bold fs-500">@2018</p>
+            <p class="text-secondary fw-regular fs-600">Illustration</p>
+          </div>
+          <p class="text-primary fw-regular fs-400">
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+            amet sint. Velit officia consequat duis enim velit mollit.
+            Exercitation veniam consequat sunt nostrud amet.
+          </p>
+        </div>
+      </div>
+      <div class="works">
+        <img src="./figma-files/Rectangle 34.png" alt="*replace-later*" class="works-img" />
+        <div class="works-rightside">
+          <h2 class="text-primary fw-bold fs-secondary-heading">
+            36 Days of Malayalam type
+          </h2>
+          <div class="works-rightside-subtext">
+            <p class="text-white bg-primary fw-extra-bold fs-500">@2018</p>
+            <p class="text-secondary fw-regular fs-600">Typography</p>
+          </div>
+          <p class="text-primary fw-regular fs-400">
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+            amet sint. Velit officia consequat duis enim velit mollit.
+            Exercitation veniam consequat sunt nostrud amet.
+          </p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="footer-links">
+        <ul role="list" aria-label="social links">
+          <li><a aria-label="github" href="#" class="fa fa-github"></a></li>
+          <li><a aria-label="codepen" href="#" class="fa fa-codepen"></a></li>
+          <li><a aria-label="linked in" href="#" class="fa fa-linkedin"></a></li>
+      </div>
+      <p class="footer-copyright">Copyright ©2020 All rights reserved</p>
+    </footer>
+  </main>
+
   <script type="module" src="/main.js"></script>
 </body>
 
