@@ -16,24 +16,32 @@
 <body>
   <header class="primary-header">
     <div class="container">
-      <nav class="primary-nav">
-        <ul role="list" class="nav-list">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Works</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
+      <div class="nav-wrapper">
+        <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+          <img class="icon-hamburger" src="./figma-files/icons8-menu-30.png" alt="" aria-hidden="true">
+          <img class="icon-close" src="./figma-files/icons8-close.svg" alt="" aria-hidden="true">
+          <span class="visually-hidden">Menu</span></button>
+        <nav class="primary-navigation" id="primary-navigation">
+          <ul role="list" class="nav-list">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Works</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+      </div>
       </nav>
     </div>
   </header>
 
   <main>
-    <section>
+    <!-- Hero Section -->
+    <section class="padding-block-900">
       <div class="container">
-        <div class="even-columns">
-          <div>
+        <div class="even-columns hero">
+          <div class="flow left-hero">
             <h1 class="fs-primary-heading fw-bold text-primary">
-              Hi, I am Bredan, a computer science student
+              Hi, I am John,<br>
+              Creative Technologist
             </h1>
             <p class="text-primary">
               Amet minim mollit non deserunt ullamco est sit aliqua dolor do
@@ -45,30 +53,30 @@
             </button>
           </div>
           <div>
-            <img src="./figma-files/profile-pic.JPG" alt="profile picture" />
+            <img class="profile-pic" src="./figma-files/Ellipse 1.png" alt="profile picture" />
           </div>
         </div>
       </div>
     </section>
-
-    <section>
-      <div class="container bg-accent-tertiary">
+    <!-- Posts Section-->
+    <section class="padding-block-600 bg-accent-tertiary">
+      <div class="container ">
+        <div class="header-divider">
+          <p class="fs-600 text-primary fw-regular recent-post">Recent posts</p>
+          <a href="#" class="text-accent-secondary fs-600 fw-regular view-all">View all</a>
+        </div>
         <div class="even-columns">
           <div>
-            <div class="header-divider">
-              <h3 class="fs-600 text-primary fw-regular">Recent posts</h3>
-              <a href="#" class="text-accent-secondary fs-600 fw-regular">View all</a>
-            </div>
             <div class="container-box bg-white">
-              <h2 class="fs-secondary-heading text-primary fw-bold">
+              <h2 class="fs-secondary-heading text-primary fw-bold padding-block-400 post-header">
                 Making a design system from scratch
               </h2>
-              <div class="date-desc-Separator">
+              <div class="date-desc-separator padding-block-400">
                 <p class="text-primary">12 Feb 2020</p>
                 <p class="text-primary">|</p>
                 <p class="text-primary">Design, Pattern</p>
               </div>
-              <p class="text-primary">
+              <p class="text-primary post-desc">
                 Amet minim mollit non deserunt ullamco est sit aliqua dolor do
                 amet sint. Velit officia consequat duis enim velit mollit.
                 Exercitation veniam consequat sunt nostrud amet.
@@ -77,15 +85,15 @@
           </div>
           <div>
             <div class="container-box bg-white">
-              <h2 class="fs-secondary-heading text-primary fw-bold">
+              <h2 class="fs-secondary-heading text-primary fw-bold padding-block-400 post-header">
                 Creating pixel perfect icons in Figma
               </h2>
-              <div class="date-desc-Separator">
+              <div class="date-desc-separator padding-block-400">
                 <p class="text-primary">12 Feb 2020</p>
                 <p class="text-primary">|</p>
                 <p class="text-primary">Figma, Icon Design</p>
               </div>
-              <p class="text-primary">
+              <p class="text-primary post-desc">
                 Amet minim mollit non deserunt ullamco est sit aliqua dolor do
                 amet sint. Velit officia consequat duis enim velit mollit.
                 Exercitation veniam consequat sunt nostrud amet.
@@ -96,68 +104,78 @@
       </div>
     </section>
 
+    <!-- Featured Works Sections-->
     <section>
-      <h3 class="text-primary fw-regular fs-600">Featured works</h3>
-      <div class="works">
-        <img src="./figma-files/Rectangle 30.png" alt="*replace-later*" class="works-img" />
-        <div class="works-rightside">
-          <h2 class="text-primary fw-bold fs-secondary-heading">
-            Designing Dashboards
-          </h2>
-          <div class="works-rightside-subtext">
-            <p class="text-white bg-primary fw-extra-bold fs-500">@2020</p>
-            <p class="text-secondary fw-regular fs-600">Dashboard</p>
+      <div class="container padding-block-600">
+        <h3 class="text-primary fw-regular fs-600">Featured works</h3>
+        <div class="works padding-block-400">
+          <img src="./figma-files/Rectangle 30.png" alt="*replace-later*" class="works-img" />
+          <div class="works-rightside">
+            <h2 class="text-primary fw-bold fs-secondary-heading">
+              Designing Dashboards
+            </h2>
+            <div class="works-rightside-subtext">
+              <p class="text-white fw-extra-bold fs-500 works-year">2020</p>
+              <p class="text-secondary fw-regular fs-600">Dashboard</p>
+            </div>
+            <p class="text-primary fw-regular fs-400">
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint. Velit officia consequat duis enim velit mollit.
+              Exercitation veniam consequat sunt nostrud amet.
+            </p>
           </div>
-          <p class="text-primary fw-regular fs-400">
-            Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-            amet sint. Velit officia consequat duis enim velit mollit.
-            Exercitation veniam consequat sunt nostrud amet.
-          </p>
         </div>
-      </div>
-      <div class="works">
-        <img src="./figma-files/Rectangle 32.png" alt="*replace-later*" class="works-img" />
-        <div class="works-rightside">
-          <h2 class="text-primary fw-bold fs-secondary-heading">
-            Vibrant Portraits of 2020
-          </h2>
-          <div class="works-rightside-subtext">
-            <p class="text-white bg-primary fw-extra-bold fs-500">@2018</p>
-            <p class="text-secondary fw-regular fs-600">Illustration</p>
+        <div class="break-line"></div>
+        <div class="works padding-block-400">
+          <img src="./figma-files/Rectangle 32.png" alt="*replace-later*" class="works-img" />
+          <div class="works-rightside">
+            <h2 class="text-primary fw-bold fs-secondary-heading">
+              Vibrant Portraits of 2020
+            </h2>
+            <div class="works-rightside-subtext">
+              <p class="text-white bg-primary fw-extra-bold fs-500 works-year">2018</p>
+              <p class="text-secondary fw-regular fs-600">Illustration</p>
+            </div>
+            <p class="text-primary fw-regular fs-400">
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint. Velit officia consequat duis enim velit mollit.
+              Exercitation veniam consequat sunt nostrud amet.
+            </p>
           </div>
-          <p class="text-primary fw-regular fs-400">
-            Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-            amet sint. Velit officia consequat duis enim velit mollit.
-            Exercitation veniam consequat sunt nostrud amet.
-          </p>
         </div>
-      </div>
-      <div class="works">
-        <img src="./figma-files/Rectangle 34.png" alt="*replace-later*" class="works-img" />
-        <div class="works-rightside">
-          <h2 class="text-primary fw-bold fs-secondary-heading">
-            36 Days of Malayalam type
-          </h2>
-          <div class="works-rightside-subtext">
-            <p class="text-white bg-primary fw-extra-bold fs-500">@2018</p>
-            <p class="text-secondary fw-regular fs-600">Typography</p>
+        <div class="break-line"></div>
+        <div class="works padding-block-400">
+          <img src="./figma-files/Rectangle 34.png" alt="*replace-later*" class="works-img" />
+          <div class="works-rightside">
+            <h2 class="text-primary fw-bold fs-secondary-heading">
+              36 Days of Malayalam type
+            </h2>
+            <div class="works-rightside-subtext">
+              <p class="text-white bg-primary fw-extra-bold fs-500 works-year">2018</p>
+              <p class="text-secondary fw-regular fs-600">Typography</p>
+            </div>
+            <p class="text-primary fw-regular fs-400">
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint. Velit officia consequat duis enim velit mollit.
+              Exercitation veniam consequat sunt nostrud amet.
+            </p>
           </div>
-          <p class="text-primary fw-regular fs-400">
-            Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-            amet sint. Velit officia consequat duis enim velit mollit.
-            Exercitation veniam consequat sunt nostrud amet.
-          </p>
         </div>
+        <div class="break-line"></div>
       </div>
     </section>
+    <!-- Footer-->
     <footer>
-      <div class="footer-links">
-        <ul role="list" aria-label="social links">
-          <li><a aria-label="github" href="#" class="fa fa-github"></a></li>
-          <li><a aria-label="codepen" href="#" class="fa fa-codepen"></a></li>
-          <li><a aria-label="linked in" href="#" class="fa fa-linkedin"></a></li>
+      <div class="container footer-wrapper">
+        <div class="footer-links">
+          <ul class="footer-list" role="list" aria-label="social links">
+            <li><a aria-label="facebook" href="#" class="fa fa-facebook fs-secondary-heading"></a></li>
+            <li><a id="footer-transparent" aria-label="instagram" href="#" class="fa fa-instagram fs-secondary-heading"></a></li>
+            <li><a id="footer-transparent" aria-label="twitter" href="#" class="fa fa-twitter fs-secondary-heading"></a></li>
+            <li><a aria-label="linked in" href="#" class="fa fa-linkedin fs-secondary-heading"></a></li>
+        </div>
+        <p class="footer-copyright padding-block-600">Copyright ©2020 All rights reserved</p>
       </div>
-      <p class="footer-copyright">Copyright ©2020 All rights reserved</p>
     </footer>
   </main>
 
